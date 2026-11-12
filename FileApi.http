@@ -1,6 +1,19 @@
 @FileApi_HostAddress = http://localhost:5183
 
-GET {{FileApi_HostAddress}}/files
-Accept: application/json
+### Create a file record
+POST {{FileApi_HostAddress}}/files
+Content-Type: application/json
 
-###
+{
+  "name": "notes.txt",
+  "sizeBytes": 120
+}
+
+### Get all
+GET {{FileApi_HostAddress}}/files
+
+### Get one by ID
+GET {{FileApi_HostAddress}}/files/1
+
+### Get one that doesn't exist
+GET {{FileApi_HostAddress}}/files/99

@@ -44,3 +44,4 @@
 /Users/melissadushaj/Developer/FileApi/obj/Debug/net10.0/compressed/fr15vx91jo-{0}-unpcgajwrq-unpcgajwrq.gz
 /Users/melissadushaj/Developer/FileApi/obj/Debug/net10.0/compressed/5z7tp4ucpe-{0}-1hhawh2zub-1hhawh2zub.gz
 /Users/melissadushaj/Developer/FileApi/obj/Debug/net10.0/compressed/zobr9o4x48-{0}-l2logz82et-l2logz82et.gz
+/Users/melissadushaj/Developer/FileApi/obj/Debug/net10.0/FileApi.sourcelink.json
