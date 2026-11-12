@@ -73,4 +73,34 @@ public class FilesController : ControllerBase
         /// 
         return CreatedAtAction(nameof(GetById), new { id = input.Id }, input);
     }
+
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, FileRecord input)
+    {
+        var record = _files.FirstOrDefault(f => f.Id == id);
+        
+        if (record == null)
+        {
+            return NotFound();
+        }
+
+        record.Name = input.Name;
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    
+    public IActionResult Delete(int id)
+    {
+        var record = _files.FirstOrDefault(f => f.Id == id);
+       
+        if (record == null)
+        {
+            return NotFound();
+        }
+        
+        _files.Remove(record);
+        return NoContent();
+    }
+
 }
